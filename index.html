@@ -5,63 +5,12 @@
 		<!-- displays site properly based on user's device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
 		<title>Frontend Mentor | QR code component</title>
-
+		<link rel="stylesheet" href="./styles.css" />
 		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-
-			:root {
-				--white: hsl(0, 0%, 100%);
-				--light-grey: hsl(212, 45%, 89%);
-				--grayish-blue: hsl(220, 15%, 55%);
-				--dark-blue: hsl(218, 44%, 22%);
-			}
-
-			body {
-				font-family: Outfit, sans-serif;
-				font-size: 15px;
-				background-color: var(--grayish-blue);
-			}
-
-			.card {
-				width: 90%;
-				height: 80vh;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				background-color: var(--white);
-				border-radius: 5%;
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				align-items: center;
-			}
-
-			img {
-				width: 90%;
-				margin: 15px auto;
-				border-radius: 5%;
-			}
-
-			.bold-text {
-				margin-top: 15px;
-				padding: 0 20px;
-				font-weight: 700;
-				text-align: center;
-			}
-
-			.light-text {
-				margin-top: 15px;
-				padding: 0 20px;
-				font-weight: 400;
-				text-align: center;
-			}
-
 			.attribution {
 				font-size: 11px;
 				text-align: center;
@@ -69,25 +18,21 @@
 			.attribution a {
 				color: hsl(228, 45%, 44%);
 			}
-
-			@media only screen and (min-width: 376px) {
-				.card {
-					width: 20%;
-					height: 60vh;
-				}
-			}
 		</style>
 	</head>
 	<body>
-		<p class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-			<a href="#">adrnmatos</a>.
-		</p>
-
-		<div class="card">
-			<img src="./images/image-qr-code.png" alt="qr code" />
-			<p class="bold-text">Improve your front-end skills by building projects</p>
-			<p class="light-text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-		</div>
+		<main>
+			<div class="card">
+				<img src="./images/image-qr-code.png" alt="qr code" />
+				<p class="bold-text">Improve your front-end skills by building projects</p>
+				<p class="light-text">
+					Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+				</p>
+			</div>
+			<p class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+				<a href="#">adrnmatos</a>.
+			</p>
+		</main>
 	</body>
 </html>
